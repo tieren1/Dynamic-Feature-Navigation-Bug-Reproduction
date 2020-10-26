@@ -1,0 +1,3 @@
+include ':foofeature'
+include ':app'
+rootProject.name = "Dynamic Feature Navigation"
