@@ -1,3 +1,6 @@
 <resources>
     <string name="change_theme">Click to change Day/Night Mode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_bar_fragment">Hello bar fragment</string>
+    <string name="navigate_to_bar">Navigate to Bar</string>
 </resources>

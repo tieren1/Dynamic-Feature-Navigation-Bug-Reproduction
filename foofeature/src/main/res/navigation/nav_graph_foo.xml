@@ -8,9 +8,20 @@
     >
 
     <fragment
-        android:id="@+id/fooScreen"
+        android:id="@id/fooScreen"
         android:name="com.android.example.dynamicNavigation.foofeature.FooFragment"
         android:label="FooScreen"
+        >
+        <action
+            android:id="@+id/action_foo_to_Bar"
+            app:destination="@id/barFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/barFragment"
+        android:name="com.android.example.dynamicNavigation.foofeature.BarFragment"
+        android:label="BarFragment"
         />
 
 </navigation>

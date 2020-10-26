@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +63,11 @@ class FooFragment : Fragment() {
             }
 
             AppCompatDelegate.setDefaultNightMode(newMode)
+        }
+
+        val navButton = view.findViewById<Button>(R.id.navButton)
+        navButton.setOnClickListener {
+            findNavController().navigate(FooFragmentDirections.actionFooToBar())
         }
     }
 

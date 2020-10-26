@@ -12,4 +12,10 @@
         app:graphResName="nav_graph_foo"
         />
 
+    <fragment
+        android:id="@+id/fooScreen"
+        app:moduleName="foofeature"
+        android:name="com.android.example.dynamicNavigation.foofeature.FooFragment"
+        />
+
 </navigation>
